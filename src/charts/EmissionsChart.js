@@ -134,7 +134,7 @@ export default function EmissionsChart() {
         <Line
           type="monotone"
           dataKey="GHG Emissions (MTCO2e)"
-          stroke="#8884d8"
+          stroke="#8f0000"
           activeDot={{ r: 8 }}
         />
       </LineChart>

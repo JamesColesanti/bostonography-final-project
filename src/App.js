@@ -8,8 +8,3 @@ function App() {
 }
 
 export default App;
-// import Example from "./charts/EmissionsChart";
-
-// export default function App() {
-//   return (<Example />);
-// }

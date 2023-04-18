@@ -1,79 +1,124 @@
-// import express from 'express'
-// import cors from 'cors'
-// import axios from 'axios';
-
-// const app = express();
-// app.use(cors());
-// app.use(express.json());
-
-// const bearerTokenResponseData = await axios.post(
-//     "https://accounts.spotify.com/api/token",
-//     {
-//         grant_type: 'client_credentials',
-//         client_id: '428147ec52be42138c11e229e16d6c0b',
-//         client_secret: '1b8d85e6cb1c4aa0bc47458d581dc79d',
-//     },
-//     {
-//       headers: {
-//         "Content-Type": "application/x-www-form-urlencoded",
-//       },
-//     }
-// );
-
-import React from 'react';
+import axios from 'axios';
+import React, { useState, useEffect, useCallback } from 'react';
 import { LineChart, Line, XAxis, YAxis, CartesianGrid, Tooltip, Legend } from 'recharts';
 
-const data = [
-  {
-    name: 'Page A',
-    uv: 4000,
-    pv: 2400,
-    amt: 2400,
-  },
-  {
-    name: 'Page B',
-    uv: 3000,
-    pv: 1398,
-    amt: 2210,
-  },
-  {
-    name: 'Page C',
-    uv: 2000,
-    pv: 9800,
-    amt: 2290,
-  },
-  {
-    name: 'Page D',
-    uv: 2780,
-    pv: 3908,
-    amt: 2000,
-  },
-  {
-    name: 'Page E',
-    uv: 1890,
-    pv: 4800,
-    amt: 2181,
-  },
-  {
-    name: 'Page F',
-    uv: 2390,
-    pv: 3800,
-    amt: 2500,
-  },
-  {
-    name: 'Page G',
-    uv: 3490,
-    pv: 4300,
-    amt: 2100,
-  },
-];
-
 export default function EmissionsChart() {
+    const [data1, setData1] = useState();
+
+    const getData = useCallback(async () => {
+        const response = await axios.get(
+            "https://data.boston.gov/api/3/action/datastore_search?resource_id=a7b155de-10ee-48fc-bd89-fc8e31134913&limit=2483",
+        );
+        setData1(response);
+    }, []);
+
+    useEffect(() => {
+        getData();
+    }, [getData]);
+
+    let averagePre1900 = 0;
+    let average1900_1919 = 0;
+    let average1920_1939 = 0;
+    let average1940_1959 = 0;
+    let average1960_1979 = 0;
+    let average1980_1999 = 0;
+    let averagePost2000 = 0;
+
+    if (data1) {
+        let listPre1900 = [];
+        let list1900_1919 = [];
+        let list1920_1939 = [];
+        let list1940_1959 = [];
+        let list1960_1979 = [];
+        let list1980_1999 = [];
+        let listPost2000 = [];
+    
+        for (let i = 0; i < 2483; i++) {
+            let curRecord = data1['data']['result']['records'][i];
+            let curRecordYear = curRecord['Year Built'];
+            if (curRecordYear < 1900) {
+                listPre1900.push(curRecord);
+            } else if (curRecordYear >= 1900 && curRecordYear <= 1919) {
+                list1900_1919.push(curRecord);
+            } else if (curRecordYear >= 1920 && curRecordYear <= 1939) {
+                list1920_1939.push(curRecord);
+            } else if (curRecordYear >= 1940 && curRecordYear <= 1959) {
+                list1940_1959.push(curRecord);
+            } else if (curRecordYear >= 1960 && curRecordYear <= 1979) {
+                list1960_1979.push(curRecord);
+            } else if (curRecordYear >= 1980 && curRecordYear <= 1999) {
+                list1980_1999.push(curRecord);
+            } else {
+                listPost2000.push(curRecord);
+            }
+        }
+
+        averagePre1900 = Math.round(listPre1900.reduce((acc, val) => 
+            (val['GHG Emissions (MTCO2e)'] !== 'Not Available' 
+                && val['GHG Emissions (MTCO2e)'] !== '' ? 
+                parseFloat(val['GHG Emissions (MTCO2e)']) + acc : acc), 0.0) / listPre1900.length);
+        average1900_1919 = Math.round(list1900_1919.reduce((acc, val) => 
+            (val['GHG Emissions (MTCO2e)'] !== 'Not Available' 
+                && val['GHG Emissions (MTCO2e)'] !== '' ? 
+                parseFloat(val['GHG Emissions (MTCO2e)']) + acc : acc), 0.0) / list1900_1919.length);  
+        average1920_1939 = Math.round(list1920_1939.reduce((acc, val) => 
+            (val['GHG Emissions (MTCO2e)'] !== 'Not Available' 
+                && val['GHG Emissions (MTCO2e)'] !== '' ? 
+                parseFloat(val['GHG Emissions (MTCO2e)']) + acc : acc), 0.0) / list1920_1939.length);    
+        average1940_1959 = Math.round(list1940_1959.reduce((acc, val) => 
+            (val['GHG Emissions (MTCO2e)'] !== 'Not Available' 
+                && val['GHG Emissions (MTCO2e)'] !== '' ? 
+                parseFloat(val['GHG Emissions (MTCO2e)']) + acc : acc), 0.0) / list1940_1959.length);   
+        average1960_1979 = Math.round(list1960_1979.reduce((acc, val) => 
+            (val['GHG Emissions (MTCO2e)'] !== 'Not Available' 
+                && val['GHG Emissions (MTCO2e)'] !== '' ? 
+                parseFloat(val['GHG Emissions (MTCO2e)']) + acc : acc), 0.0) / list1960_1979.length);      
+        average1980_1999 = Math.round(list1980_1999.reduce((acc, val) => 
+            (val['GHG Emissions (MTCO2e)'] !== 'Not Available' 
+                && val['GHG Emissions (MTCO2e)'] !== '' ? 
+                parseFloat(val['GHG Emissions (MTCO2e)']) + acc : acc), 0.0) / list1980_1999.length);  
+        averagePost2000 = Math.round(listPost2000.reduce((acc, val) => 
+            (val['GHG Emissions (MTCO2e)'] !== 'Not Available' 
+                && val['GHG Emissions (MTCO2e)'] !== '' ? 
+                parseFloat(val['GHG Emissions (MTCO2e)']) + acc : acc), 0.0) / listPost2000.length);          
+    }
+
+    const chartData = [
+        {
+          name: '<1900',
+          "GHG Emissions (MTCO2e)": averagePre1900,
+        },
+        {
+          name: '1900-1919',
+          "GHG Emissions (MTCO2e)": average1900_1919,
+        },
+        {
+          name: '1920-1939',
+          "GHG Emissions (MTCO2e)": average1920_1939,
+        },
+        {
+          name: '1940-1959',
+          "GHG Emissions (MTCO2e)": average1940_1959,
+        },
+        {
+          name: '1960-1979',
+          "GHG Emissions (MTCO2e)": average1960_1979,
+        },
+        {
+          name: '1980-1999',
+          "GHG Emissions (MTCO2e)": average1980_1999,
+        },
+        {
+          name: '2000-2019',
+          "GHG Emissions (MTCO2e)": averagePost2000,
+        },
+      ];
+
     return (
       <LineChart
-        width={500}
+        width={800}
         height={300}
-        data={data}
+        data={chartData}
         margin={{
           top: 5,
           right: 30,
@@ -88,11 +133,10 @@ export default function EmissionsChart() {
         <Legend />
         <Line
           type="monotone"
-          dataKey="pv"
+          dataKey="GHG Emissions (MTCO2e)"
           stroke="#8884d8"
           activeDot={{ r: 8 }}
         />
-        <Line type="monotone" dataKey="uv" stroke="#82ca9d" />
       </LineChart>
     );
   }

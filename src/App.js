@@ -40,7 +40,7 @@ function App() {
         <p>
           As we can see in the charts, this claim is not supported by the data. In the GHG emissions chart, the peak can be found in the data point for 
           the years between 2000 and 2009. There is a sharp 
-          increase after 1990, which contradicts the claim that GHG emissions did not rise past the level they were at when the EPA was founded.
+          increase after 1999, which contradicts the claim that GHG emissions did not rise past the level they were at when the EPA was founded in 1970.
         </p>
         <p>
           We can look at U.S. history, and Boston history specifically, to help understand the data we see in the visualization. For example, we can start with 

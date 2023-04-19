@@ -40,7 +40,7 @@ function App() {
         <p>
           As we can see in the charts, this claim is not supported by the data. In the GHG emissions chart, the peak can be found in the data point for 
           the years between 2000 and 2009. There is a sharp 
-          increase after 1980, which contradicts the claim that GHG emissions did not rise past the level they were at when the EPA was founded.
+          increase after 1990, which contradicts the claim that GHG emissions did not rise past the level they were at when the EPA was founded.
         </p>
         <p>
           We can look at U.S. history, and Boston history specifically, to help understand the data we see in the visualization. For example, we can start with 
@@ -63,7 +63,7 @@ function App() {
           the EPA was effective in promoting building regulations during this time. The EPA made notable progress in passing legislation relating to GHG emissions 
           in the 1970s, including amendments to the Clean Air Act. This was a law that had been in place since 1963, although the 1970 amendments greatly improved 
           its impact. The updated law gave the EPA the power to enforce National Ambient Air Quality Standards (NAAQS). This applied to buildings, which likely led 
-          to much safer practices during this construction in the years that followed. 
+          to much safer practices during construction in the years that followed. 
         </p>
         <p>
           Likely the most shocking data point in the emissions chart is the sharp increase in emissions for buildings constructed between 2000 and 2009. This is 
@@ -81,8 +81,9 @@ function App() {
         </p>
         <p>
           The sharp decrease that follows this peak also makes sense given President Obama's administration from 2008-2016. Obama is widely regarded as one of the EPA's 
-          most supportive presidents, as he made several efforts to strengthen the EPA's regulatory power. Under Obama, the EPA went back to strongly 
-          regulating GHG emissions. This, along with Massachusetts' legislators desire to decrease GHG emissions, likely led to the decrease we see in the chart for 
+          most supportive presidents, as he made several efforts to strengthen the EPA's regulatory power. This included over 4000 regulations being issued over the course
+          of his administration, many of which focused on reducing GHG emissions. Under Obama, the EPA went back to strongly 
+          regulating GHG emissions as it had done before the Bush administration. This, along with Massachusetts' legislators desire to decrease GHG emissions, likely led to the decrease we see in the chart for 
           buildings constructed in the years after 2010.
         </p>
         <p>

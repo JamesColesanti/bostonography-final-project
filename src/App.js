@@ -33,8 +33,8 @@ function App() {
           foot of the buildings in each group (in kBTU). 
         </p>
         <p>
-          This visualization was made to analyze the claim that the GHG emissions of Boston buildings in 2021 was higher for buildings constructed before 1970, 
-          which was when the EPA was created. For buildings constructed after that year, the average was below this peak. This claim was made prior to any 
+          This visualization was made to analyze the claim that the average GHG emissions of Boston buildings in 2021 was higher for buildings constructed before 1970, 
+          which was when the Environmental Protection Agency (EPA) was created. For buildings constructed after that year, the average was below this peak. This claim was made prior to any 
           data being analyzed, and was mainly a hypothesis based on research about the foundation of the EPA. 
         </p>
         <p>
@@ -83,13 +83,13 @@ function App() {
           The sharp decrease that follows this peak also makes sense given President Obama's administration from 2008-2016. Obama is widely regarded as one of the EPA's 
           most supportive presidents, as he made several efforts to strengthen the EPA's regulatory power. This included over 4000 regulations being issued over the course
           of his administration, many of which focused on reducing GHG emissions. Under Obama, the EPA went back to strongly 
-          regulating GHG emissions as it had done before the Bush administration. This, along with Massachusetts' legislators desire to decrease GHG emissions, likely led to the decrease we see in the chart for 
+          regulating emissions as it had done before the Bush administration. This, along with Massachusetts' legislators desire to decrease emissions, likely led to the decrease we see in the chart for 
           buildings constructed in the years after 2010.
         </p>
         <p>
           Overall, this data visualization provides a unique perspective on the state of GHG emissions in Boston over the past 100 years. Although it disproves our 
           initial claim, it still provides some insight into the impact the EPA had on the construction of buildings in Boston. The peaks in the emissions chart correspond
-          to periods of rapid expansion and little regulation, while the lows correspond to strong EPA and government action. Thus, the visualization helps to
+          to periods of rapid expansion and little regulation, while the lows correspond to strong EPA and government action. Thus, the visualization helps us
           understand the impact of the EPA on building construction wthin Boston, which was the initial goal of the project.
         </p>
       </div>

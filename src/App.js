@@ -90,7 +90,7 @@ function App() {
           Overall, this data visualization provides a unique perspective on the state of GHG emissions in Boston over the past 100 years. Although it disproves our 
           initial claim, it still provides some insight into the impact the EPA had on the construction of buildings in Boston. The peaks in the emissions chart correspond
           to periods of rapid expansion and little regulation, while the lows correspond to strong EPA and government action. Thus, the visualization helps us
-          understand the impact of the EPA on building construction wthin Boston, which was the initial goal of the project.
+          understand the impact of the EPA on building construction within Boston, which was the initial goal of the project.
         </p>
       </div>
       <div>

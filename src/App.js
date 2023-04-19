@@ -33,14 +33,14 @@ function App() {
           foot of the buildings in each group (in kBTU). 
         </p>
         <p>
-          This visualization was made to analyze the claim that the average GHG emissions of Boston buildings in 2021 was higher for buildings constructed before 1970, 
+          This visualization was made to analyze the claim that the average GHG emissions of Boston buildings in 2021 was highest for buildings constructed in or before 1970, 
           which was when the Environmental Protection Agency (EPA) was created. For buildings constructed after that year, the average was below this peak. This claim was made prior to any 
           data being analyzed, and was mainly a hypothesis based on research about the foundation of the EPA. 
         </p>
         <p>
-          As we can see in the charts, this claim is not supported by the data. In the GHG emissions chart, the peak can be found in the data point for 
+          As we can see in the visualization above, this claim is not supported by the data. In the GHG emissions chart, the peak can be found in the data point for 
           the years between 2000 and 2009. There is a sharp 
-          increase after 1999, which contradicts the claim that GHG emissions did not rise past the level they were at when the EPA was founded in 1970.
+          increase after 1999, which contradicts the claim that GHG emissions did not rise past the level they were at before the EPA was founded in 1970.
         </p>
         <p>
           We can look at U.S. history, and Boston history specifically, to help understand the data we see in the visualization. For example, we can start with 

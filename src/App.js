@@ -5,32 +5,33 @@ import EnergyUsageChart from './charts/EnergyUsageChart';
 function App() {
   return (
     <div>
+      <h1>
+        Analyzing Emissions of Boston Buildings Based on Year Built
+      </h1>
       <div>
-        <h1>
+        <h2>
           Emissions Chart
-        </h1>
+        </h2>
       </div>
       <EmissionsChart />
       <div>
-        <h1>
+        <h2>
           Energy Usage Chart
-        </h1>
+        </h2>
       </div>
       <EnergyUsageChart />
       <div>
-        <div class="bos-padding-front">
-          <p>
-            The above charts provide a visualization of data pulled from  
-            <a href='https://data.boston.gov/dataset/building-energy-reporting-and-disclosure-ordinance/resource/a7b155de-10ee-48fc-bd89-fc8e31134913'> 
-              Building Energy Reporting and Disclosure Ordinance (BERDO) - 2021 Reported Energy and Water Metrics - Analyze Boston. 
-            </a>
-            On the y-axis, there are years corresponding to when buildings in Boston were built. In the first chart, the line represents the average 
-            GHG emissions (in MTCO2e) of Boston buildings in 2021. The buildings are grouped by when they were built. For example, the dot above 
-            "1900-1909" represents the average GHG emissions in 2021 for all buildings in the data set that were built between the years 1900 and 1909. 
-            In the second chart, the buildings are grouped the same way. The only difference is that the line represents the average energy per square 
-            foot of the buildings in each group (in kBTU). 
-          </p>
-        </div>
+        <p>
+          The above charts provide a visualization of data pulled from  
+          <a href='https://data.boston.gov/dataset/building-energy-reporting-and-disclosure-ordinance/resource/a7b155de-10ee-48fc-bd89-fc8e31134913'> 
+            Building Energy Reporting and Disclosure Ordinance (BERDO) - 2021 Reported Energy and Water Metrics - Analyze Boston. 
+          </a>
+          On the y-axis, there are years corresponding to when buildings in Boston were built. In the first chart, the line represents the average 
+          GHG emissions (in MTCO2e) of Boston buildings in 2021. The buildings are grouped by when they were built. For example, the dot above 
+          "1900-1909" represents the average GHG emissions in 2021 for all buildings in the data set that were built between the years 1900 and 1909. 
+          In the second chart, the buildings are grouped the same way. The only difference is that the line represents the average energy per square 
+          foot of the buildings in each group (in kBTU). 
+        </p>
         <p>
           This visualization was made to analyze the claim that the emissions of Boston buildings in 2021 was higher for buildings constructed before 1970, 
           which was when the EPA was created. For buildings constructed after that year, the average was below this peak. This claim was made prior to any 
@@ -92,7 +93,9 @@ function App() {
         </p>
       </div>
       <div>
-        <a href='https://github.com/JamesColesanti/bostonography-final-project/blob/abde47fae2dec2399dc5a81b6bcc5d05f7c46866/public/bos-final-project-works-cited.pdf'>Works Cited</a>
+        <span>
+          <a href='https://github.com/JamesColesanti/bostonography-final-project/blob/master/public/bos-final-project-works-cited.pdf'>Works Cited</a>
+        </span>
       </div>
     </div>
   );

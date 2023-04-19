@@ -1,8 +1,20 @@
 .App {
-    font-family: sans-serif;
-    text-align: center;
-  }
+  font-family: sans-serif;
+  text-align: center;
+}
   
-.bos-padding-left {
-    padding-left: 12px;;
+p {
+  padding-left: 25px;
+  padding-right: 25px;;
+}
+
+p a {
+  padding-left: 4px;
+  padding-right: 4px;
+}
+
+span a {
+  display: flex;
+  justify-content: center;
+  padding-bottom: 50px;
 }

@@ -74,13 +74,13 @@ function App() {
           the time.
         </p>
         <p>
-          It is also important to note that President Bush's EPA did very little to regulate GHG emissions, which likely contributed to this peak in the chart as well. 
+          It is also important to note that President George W. Bush's EPA did very little to regulate GHG emissions, which likely contributed to this peak in the chart as well. 
           The state of Massachusetts actually sued the EPA during this time due to their inaction on this issue. In 2007, the Supreme Court ruled in favor of 
           Massachusetts, requiring the EPA to regulate emissions in order to properly follow the Clean Air Act mentioned before. This shows that Massachusetts' legislators 
           were in favor of strict regulation, which likely contributed to the decrease in emissions for buildings constructed shortly after this lawsuit took place.
         </p>
         <p>
-          The sharp decrease that follows this peak also makes sense given President Obama's administration from 2008-2016. Obama is widely regarded as one of the EPA's 
+          The sharp decrease that follows this peak also makes sense given President Barack Obama's administration from 2008-2016. Obama is widely regarded as one of the EPA's 
           most supportive presidents, as he made several efforts to strengthen the EPA's regulatory power. This included over 4000 regulations being issued over the course
           of his administration, many of which focused on reducing GHG emissions. Under Obama, the EPA went back to strongly 
           regulating emissions as it had done before the Bush administration. This, along with Massachusetts' legislators desire to decrease emissions, likely led to the decrease we see in the chart for 

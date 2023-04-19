@@ -6,7 +6,7 @@ function App() {
   return (
     <div>
       <h1>
-        Analyzing Emissions of Boston Buildings Based on Year Built
+        Boston Wasn't Built in a Day: Analyzing Emissions of the City's Buildings
       </h1>
       <div>
         <h2>
@@ -26,7 +26,7 @@ function App() {
           <a href='https://data.boston.gov/dataset/building-energy-reporting-and-disclosure-ordinance/resource/a7b155de-10ee-48fc-bd89-fc8e31134913'> 
             Building Energy Reporting and Disclosure Ordinance (BERDO) - 2021 Reported Energy and Water Metrics - Analyze Boston. 
           </a>
-          On the y-axis, there are years corresponding to when buildings in Boston were built. In the first chart, the line represents the average 
+          On the y-axis, there are years corresponding to when buildings in Boston were constructed. In the first chart, the line represents the average 
           GHG emissions (in MTCO2e) of Boston buildings in 2021. The buildings are grouped by when they were built. For example, the dot above 
           "1900-1909" represents the average GHG emissions in 2021 for all buildings in the data set that were built between the years 1900 and 1909. 
           In the second chart, the buildings are grouped the same way. The only difference is that the line represents the average energy per square 

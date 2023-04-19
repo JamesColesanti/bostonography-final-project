@@ -22,7 +22,7 @@ function App() {
       <EnergyUsageChart />
       <div>
         <p>
-          The above charts provide a visualization of data pulled from  
+          The above charts provide a visualization of data pulled from the
           <a href='https://data.boston.gov/dataset/building-energy-reporting-and-disclosure-ordinance/resource/a7b155de-10ee-48fc-bd89-fc8e31134913'> 
             Building Energy Reporting and Disclosure Ordinance (BERDO) - 2021 Reported Energy and Water Metrics - Analyze Boston. 
           </a>
@@ -39,12 +39,12 @@ function App() {
         </p>
         <p>
           As we can see in the charts, this claim is not supported by the data. In the GHG emissions chart, the peak can be found in the data point for 
-          the years between 2000 and 2009. In the energy usage chart, the peak can be found between the years 1910-1919. In both charts, there is a sharp 
+          the years between 2000 and 2009. There is a sharp 
           increase after 1980, which contradicts the claim that GHG emissions did not rise past the level they were at when the EPA was founded.
         </p>
         <p>
           We can look at U.S. history, and Boston history specifically, to help understand the data we see in the visualization. For example, we can start with 
-          the peak in 1910-1919. This can best be explained by the growth of the city during the industrial revolution. During this time, Boston changed drastically 
+          the peak in 1910-1919. This can best be explained by the growth of the city following the industrial revolution. During this time, Boston changed drastically 
           as a large influx of immigrants caused the population to skyrocket. Additionally, this time period was roughly 10 years after the creation of the "T", Boston's 
           subway system. These factors likely contributed to the construction of many buildings in a short period of time. Given that the new technology from the 
           industrial revolution, such as the steam engine, was not regulated as strictly as it would later be, it would make sense that buildings constructed during 
@@ -81,7 +81,7 @@ function App() {
         </p>
         <p>
           The sharp decrease that follows this peak also makes sense given President Obama's administration from 2008-2016. Obama is widely regarded as one of the EPA's 
-          most supportive presidents, as he made several efforts to strengthen the EPA's ability to regulate GHG emissions. Under Obama, the EPA went back to strongly 
+          most supportive presidents, as he made several efforts to strengthen the EPA's regulatory power. Under Obama, the EPA went back to strongly 
           regulating GHG emissions. This, along with Massachusetts' legislators desire to decrease GHG emissions, likely led to the decrease we see in the chart for 
           buildings constructed in the years after 2010.
         </p>

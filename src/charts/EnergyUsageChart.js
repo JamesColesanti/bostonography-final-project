@@ -2,6 +2,8 @@ import axios from 'axios';
 import React, { useState, useEffect, useCallback } from 'react';
 import { LineChart, Line, XAxis, YAxis, CartesianGrid, Tooltip, Legend } from 'recharts';
 
+// Code for the line chart was adapted from user xile611's code sandbox, which can
+// be found here: https://codesandbox.io/s/simple-line-chart-kec3v?file=/src/App.tsx
 export default function EnergyUsageChart() {
     const [data1, setData1] = useState();
 
@@ -16,6 +18,7 @@ export default function EnergyUsageChart() {
         getData();
     }, [getData]);
 
+    // Averages that will be used for the data points in the chart
     let averagePre1900 = 0;
     let average1900_1909 = 0;
     let average1910_1919 = 0;
@@ -31,6 +34,7 @@ export default function EnergyUsageChart() {
     let averagePost2010 = 0;
 
     if (data1) {
+        // Lists used to group records by "Year Built" value
         let listPre1900 = [];
         let list1900_1909 = [];
         let list1910_1919 = [];
@@ -45,6 +49,8 @@ export default function EnergyUsageChart() {
         let list2000_2009 = [];
         let listPost2010 = [];
     
+        // Loop through records returned from call to data set API, grouping
+        // based on "Year Built"
         for (let i = 0; i < 2483; i++) {
             let curRecord = data1['data']['result']['records'][i];
             let curRecordYear = curRecord['Year Built'];
@@ -77,6 +83,8 @@ export default function EnergyUsageChart() {
             }
         }
 
+        // Reduce function used to iterate over all records in each list, parse out the ones
+        // with missing data, and then calculate the average energy per square foot (in kBTU)
         averagePre1900 = Math.round(listPre1900.reduce((acc, val) => 
             (val['Total Site Energy (kBTU)'] !== 'Not Available' 
                 && val['Total Site Energy (kBTU)'] !== '' 
@@ -170,6 +178,7 @@ export default function EnergyUsageChart() {
                     + acc : acc), 0.0) / listPost2010.length);         
     }
 
+    // Object holding the data points for the chart
     const chartData = [
         {
             name: '<1900',

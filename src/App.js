@@ -33,29 +33,28 @@ function App() {
           foot of the buildings in each group (in kBTU). 
         </p>
         <p>
-          This visualization was made to analyze the claim that the emissions of Boston buildings in 2021 was higher for buildings constructed before 1970, 
+          This visualization was made to analyze the claim that the GHG emissions of Boston buildings in 2021 was higher for buildings constructed before 1970, 
           which was when the EPA was created. For buildings constructed after that year, the average was below this peak. This claim was made prior to any 
           data being analyzed, and was mainly a hypothesis based on research about the foundation of the EPA. 
         </p>
         <p>
           As we can see in the charts, this claim is not supported by the data. In the GHG emissions chart, the peak can be found in the data point for 
           the years between 2000 and 2009. In the energy usage chart, the peak can be found between the years 1910-1919. In both charts, there is a sharp 
-          increase after 1980, which contradicts the claim that both GHG emissions and energy usage did not rise past the level they were at when the EPA 
-          was founded.
+          increase after 1980, which contradicts the claim that GHG emissions did not rise past the level they were at when the EPA was founded.
         </p>
         <p>
-          We can look at U.S. history, and Boston history specifically to help understand the data we see in the visualization. For example, we can start with 
+          We can look at U.S. history, and Boston history specifically, to help understand the data we see in the visualization. For example, we can start with 
           the peak in 1910-1919. This can best be explained by the growth of the city during the industrial revolution. During this time, Boston changed drastically 
           as a large influx of immigrants caused the population to skyrocket. Additionally, this time period was roughly 10 years after the creation of the "T", Boston's 
           subway system. These factors likely contributed to the construction of many buildings in a short period of time. Given that the new technology from the 
           industrial revolution, such as the steam engine, was not regulated as strictly as it would later be, it would make sense that buildings constructed during 
-          this time did not place much emphasis on energy efficiency/emissions. As a result, we see the large spike in the emissions chart. Large energy usage later on 
-          caused large amounts of GHG emissions as a result.
+          this time did not place much emphasis on energy efficiency/emissions. As a result, we see the large spike in the emissions chart. High energy usage later on in 2021 
+          caused large amounts of GHG emissions.
         </p>
         <p>
           There is a large drop-off in the production of emissions in buildings constructed in the years following this peak. This is likely due to the decreasing 
           pace at which new buildings were made. The population grew less during this time, which meant construction slowed down considerably. Buildings that were 
-          constructed during this time were probably more selective, which gave architects and engineers greater flexibility in worrying about GHG emissions. 
+          constructed during this time were probably more selective, which gave architects and engineers greater flexibility when considering GHG emissions. 
           Awareness of the environmental impacts of the industrial revolution likely grew as well, which may have impacted building design decisions.
         </p>
         <p>
@@ -64,14 +63,14 @@ function App() {
           the EPA was effective in promoting building regulations during this time. The EPA made notable progress in passing legislation relating to GHG emissions 
           in the 1970s, including amendments to the Clean Air Act. This was a law that had been in place since 1963, although the 1970 amendments greatly improved 
           its impact. The updated law gave the EPA the power to enforce National Ambient Air Quality Standards (NAAQS). This applied to buildings, which likely led 
-          to much safer practices during this construction in the years that follow. 
+          to much safer practices during this construction in the years that followed. 
         </p>
         <p>
           Likely the most shocking data point in the emissions chart is the sharp increase in emissions for buildings constructed between 2000 and 2009. This is 
           slightly disheartening to see, as it indicates that the EPA's policies were not successful in having a lasting impact on improving the way buildings were 
           made in Boston. The spike was likely due to the explosion of the internet during these years. Buildings were constructed with the popularity of the internet 
-          in mind, which meant greater capacity for energy usage. In the energy usage chart, we can see that these buildings also used much more energy than buildings 
-          that were constructed in years prior. Based on this data, it seems like the spike in emissions may have been unavoidable given the advance in technology at 
+          in mind, which meant greater capacity for energy usage. In the energy usage chart, we can see that these buildings used much more energy than buildings 
+          that were constructed in years prior. Based on this data, it seems that the spike in emissions may have been unavoidable given the advance in technology at 
           the time.
         </p>
         <p>
@@ -88,8 +87,9 @@ function App() {
         </p>
         <p>
           Overall, this data visualization provides a unique perspective on the state of GHG emissions in Boston over the past 100 years. Although it disproves our 
-          initial claim, it still provides some insight into the impact the EPA had on the construction of buildings in Boston. Many events from U.S. and Boston history 
-          support the findings shown above. 
+          initial claim, it still provides some insight into the impact the EPA had on the construction of buildings in Boston. The peaks in the emissions chart correspond
+          to periods of rapid expansion and little regulation, while the lows correspond to strong EPA and government action. Thus, the visualization helps to
+          understand the impact of the EPA on building construction wthin Boston, which was the initial goal of the project.
         </p>
       </div>
       <div>

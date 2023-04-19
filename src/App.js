@@ -92,7 +92,7 @@ function App() {
         </p>
       </div>
       <div>
-        <a href='../public/robots.txt'>Works Cited</a>
+        <a href='https://github.com/JamesColesanti/bostonography-final-project/blob/abde47fae2dec2399dc5a81b6bcc5d05f7c46866/public/bos-final-project-works-cited.pdf'>Works Cited</a>
       </div>
     </div>
   );

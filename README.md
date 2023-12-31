@@ -1,5 +1,5 @@
 # Bostonography Course Project
-This is a data visualization of the City of Boston's 2021 Reported Energy AND Water Metrics, found here: https://data.boston.gov/dataset/building-energy-reporting-and-disclosure-ordinance/resource/a7b155de-10ee-48fc-bd89-fc8e31134913
+This is a data visualization of the City of Boston's 2021 Reported Energy AND Water Metrics, found here: [https://data.boston.gov/dataset/building-energy-reporting-and-disclosure-ordinance/resource/a7b155de-10ee-48fc-bd89-fc8e31134913](https://data.boston.gov/dataset/berdo-reporting-2021)
 
 ### Running the code locally
 
